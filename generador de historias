@@ -1,0 +1,28 @@
+# Definir las listas iniciales de personajes, lugares y acciones 
+personajes = [ "un mago", "una princesa", "un caballero", "un dragon"]
+lugares = ["el castillo", "el bosque en cantado", "la montaña"]
+acciones = ["enfrenta a sus miedos", "descrube un secreto " , "encuentra un tesoro"]
+
+#Funcion para agregar un nuevo lugar y acciones a las listas
+def agregar_elemento():
+    nuevo_lugar = input("Ingrese el nuevo lugar: ")
+    lugares.append(nuevo_lugar)
+    nueva_accion = input("Ingrese la nueva acción: ")
+    acciones.append(nueva_accion)
+
+    #agregar los nuevos elementos a las listas 
+    lugares.append(nuevo_lugar)
+    acciones.append(nueva_accion)
+    print("¡Nuevos elemenos agregados con exitos!")
+
+#Funcion para generar una historia aleatoria 
+def generar_historia():
+    import random
+    personaje_aleatorio = random.choice(personajes)
+    lugar_aleatorio = random.choice(lugares)
+    accion_aleatoria = random.choice(acciones)
+
+#generar y mostrar la historia
+
+    Historia = f"habia una vez {Personaje} que, un {lugar},{accion}"
+    print(Historia)
